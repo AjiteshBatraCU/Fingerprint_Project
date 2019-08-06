@@ -1,0 +1,18 @@
+Fitter Status : Successful - Mon Aug 05 19:28:39 2019
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : fingerprint
+Top-level Entity Name : project_bdf
+Family : MAX 10
+Device : 10M50DAF484C7G
+Timing Models : Final
+Total logic elements : 4,358 / 49,760 ( 9 % )
+    Total combinational functions : 3,883 / 49,760 ( 8 % )
+    Dedicated logic registers : 2,567 / 49,760 ( 5 % )
+Total registers : 2567
+Total pins : 76 / 360 ( 21 % )
+Total virtual pins : 0
+Total memory bits : 673,440 / 1,677,312 ( 40 % )
+Embedded Multiplier 9-bit elements : 6 / 288 ( 2 % )
+Total PLLs : 0 / 4 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 2 ( 0 % )

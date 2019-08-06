@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Mon Aug 05 19:28:16 2019
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : fingerprint
+Top-level Entity Name : project_bdf
+Family : MAX 10
+Total logic elements : 4,761
+    Total combinational functions : 3,875
+    Dedicated logic registers : 2,641
+Total registers : 2641
+Total pins : 76
+Total virtual pins : 0
+Total memory bits : 673,440
+Embedded Multiplier 9-bit elements : 6
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

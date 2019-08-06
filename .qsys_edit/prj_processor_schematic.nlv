@@ -1,0 +1,26 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst prj_processor -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst prj_processor.fp2_control -pg 1 -lvl 3 -y 350
+preplace inst prj_processor.sys_timer -pg 1 -lvl 3 -y 250
+preplace inst prj_processor.fp1_control -pg 1 -lvl 3 -y 30
+preplace inst prj_processor.clk -pg 1 -lvl 1 -y 470
+preplace inst prj_processor.prog_mem -pg 1 -lvl 3 -y 470
+preplace inst prj_processor.cpu -pg 1 -lvl 2 -y 480
+preplace inst prj_processor.cpu.reset_bridge -pg 1
+preplace inst prj_processor.sysid -pg 1 -lvl 3 -y 550
+preplace inst prj_processor.cpu.cpu -pg 1
+preplace inst prj_processor.cpu.clock_bridge -pg 1
+preplace inst prj_processor.PWM_control -pg 1 -lvl 3 -y 630
+preplace inst prj_processor.jtag_uart -pg 1 -lvl 3 -y 150
+preplace netloc EXPORT<net_container>prj_processor</net_container>(SLAVE)PWM_control.external_connection,(SLAVE)prj_processor.pwm_control) 1 0 3 NJ 660 NJ 660 NJ
+preplace netloc EXPORT<net_container>prj_processor</net_container>(SLAVE)fp2_control.external_connection,(SLAVE)prj_processor.fp2) 1 0 3 NJ 380 NJ 380 NJ
+preplace netloc EXPORT<net_container>prj_processor</net_container>(SLAVE)prj_processor.clk,(SLAVE)clk.clk_in) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>prj_processor</net_container>(SLAVE)jtag_uart.clk,(SLAVE)sysid.clk,(SLAVE)sys_timer.clk,(SLAVE)prog_mem.clk1,(SLAVE)cpu.clk,(SLAVE)fp2_control.clk,(MASTER)clk.clk,(SLAVE)fp1_control.clk,(SLAVE)PWM_control.clk) 1 1 2 310 420 710
+preplace netloc EXPORT<net_container>prj_processor</net_container>(SLAVE)prj_processor.reset,(SLAVE)clk.clk_in_reset) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>prj_processor</net_container>(SLAVE)fp2_control.reset,(SLAVE)PWM_control.reset,(SLAVE)sys_timer.reset,(SLAVE)prog_mem.reset1,(SLAVE)fp1_control.reset,(SLAVE)cpu.reset,(MASTER)clk.clk_reset,(SLAVE)jtag_uart.reset,(SLAVE)sysid.reset) 1 1 2 290 440 730
+preplace netloc EXPORT<net_container>prj_processor</net_container>(SLAVE)prj_processor.fp1,(SLAVE)fp1_control.external_connection) 1 0 3 NJ 60 NJ 60 NJ
+preplace netloc FAN_OUT<net_container>prj_processor</net_container>(SLAVE)fp2_control.irq,(SLAVE)sys_timer.irq,(SLAVE)fp1_control.irq,(SLAVE)jtag_uart.irq,(MASTER)cpu.irq) 1 2 1 690
+preplace netloc INTERCONNECT<net_container>prj_processor</net_container>(SLAVE)jtag_uart.avalon_jtag_slave,(SLAVE)sysid.control_slave,(SLAVE)cpu.debug_mem_slave,(SLAVE)fp1_control.s1,(SLAVE)PWM_control.s1,(MASTER)cpu.instruction_master,(SLAVE)fp2_control.s1,(SLAVE)prog_mem.s1,(SLAVE)sys_timer.s1,(MASTER)cpu.data_master) 1 1 2 310 680 750
+levelinfo -pg 1 0 80 940
+levelinfo -hier prj_processor 90 120 450 780 930

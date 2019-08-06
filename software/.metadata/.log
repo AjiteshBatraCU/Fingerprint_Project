@@ -1,0 +1,37 @@
+!SESSION 2019-08-05 18:31:17.750 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/16.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-08-05 18:32:05.924
+!MESSAGE Indexed 'prj_code_bsp' (88 sources, 156 headers) in 2.13 sec: 5,408 declarations; 9,031 references; 45 unresolved inclusions; 3 syntax errors; 99 unresolved names (0.68%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-08-05 18:32:07.323
+!MESSAGE Indexed 'prj_code' (0 sources, 0 headers) in 0.00 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-08-05 18:33:10.234
+!MESSAGE Executing: [C:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x41070]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-08-05 18:33:11.957
+!MESSAGE Executing: [C:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x41070 /cygdrive/c/SoftProcDes/fp_project/software/prj_code/prj_code.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-08-05 18:36:46.723
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-08-05 18:36:47.202
+!MESSAGE Executing: [C:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x41070]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-08-05 18:36:48.973
+!MESSAGE Executing: [C:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x41070 /cygdrive/c/SoftProcDes/fp_project/software/prj_code/prj_code.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-08-05 19:30:53.921
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-08-05 19:30:54.390
+!MESSAGE Executing: [C:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x41070]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-08-05 19:30:56.358
+!MESSAGE Executing: [C:/intelfpga_lite/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x41070 /cygdrive/c/SoftProcDes/fp_project/software/prj_code/prj_code.elf]
